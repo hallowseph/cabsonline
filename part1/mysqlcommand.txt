@@ -1,0 +1,21 @@
+//xxg8089
+
+DROP TABLE IF EXISTS bookings;
+
+
+
+CREATE TABLE bookings (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+booking_reference VARCHAR(8) NOT NULL UNIQUE,
+customer_name VARCHAR(100) NOT NULL,
+phone_number VARCHAR(12) NOT NULL,
+unit_number VARCHAR(10),
+street_number VARCHAR(10) NOT NULL,
+street_name VARCHAR(100) NOT NULL,
+suburb VARCHAR(50),
+destination_suburb VARCHAR(50),
+pickup_date DATE NOT NULL,
+pickup_time TIME NOT NULL,
+booking_date_time DATETIME NOT NULL,
+status VARCHAR(20) NOT NULL DEFAULT 'unassigned'
+);

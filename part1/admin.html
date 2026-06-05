@@ -1,0 +1,32 @@
+<!--
+    Student:     Joseph Reanzares
+    Student ID:  xxg8089
+    File:        admin.html
+    Description: Admin page for the CabsOnline booking system.
+                 Allows searching for a booking by reference number,
+                 displays results in a table, and allows taxi assignment.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CabsOnline - Admin</title>
+        <link rel="stylesheet" href="booking.css">
+    </head>
+    <body>
+        <h1>CabsOnline - Admin</h1>
+
+        <p>
+            <label for="bsearch">Booking Reference Number: </label>
+            <input type="text" name="bsearch" id="bsearch" placeholder="e.g. BRN00001" />
+            <input type="button" name="sbutton" id="sbutton" value="Search" onclick="searchBooking()" />
+        </p>
+
+        <div id="results"></div>
+
+        <div id="confirmation"></div>
+
+        <script src="admin.js"></script>
+    </body>
+</html>

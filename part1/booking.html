@@ -1,0 +1,82 @@
+<!--
+    Student:     Joseph Reanzares
+    Student ID:  xxg8089
+    File:        booking.html
+    Description: HTML page to take inputs for a booking request,
+                 then pass to the server for processing using the Fetch API.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabs Online - Book a Taxi</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <h1>CabsOnline - Book a Taxi</h1>
+
+    <form id="bookingForm">
+
+        <p>
+            <label for="cname">Customer Name: </label>
+            <input type="text" name="cname" id="cname" />
+            <span id="cname-error" class="error"></span>
+        </p>
+
+        <p>
+            <label for="phone">Phone Number: </label>
+            <input type="text" name="phone" id="phone" />
+            <span id="phone-error" class="error"></span>
+        </p>
+
+        <p>
+            <label for="unumber">Unit Number: </label>
+            <input type="text" name="unumber" id="unumber" />
+        </p>
+
+        <p>
+            <label for="snumber">Street Number: </label>
+            <input type="text" name="snumber" id="snumber" />
+            <span id="snumber-error" class="error"></span>
+        </p>
+
+        <p>
+            <label for="stname">Street Name: </label>
+            <input type="text" name="stname" id="stname" />
+            <span id="stname-error" class="error"></span>
+        </p>
+
+        <p>
+            <label for="sbname">Suburb: </label>
+            <input type="text" name="sbname" id="sbname" />
+        </p>
+
+        <p>
+            <label for="dsbname">Destination Suburb: </label>
+            <input type="text" name="dsbname" id="dsbname" />
+        </p>
+
+        <p>
+            <label for="date">Pick-Up Date: </label>
+            <input type="date" name="date" id="date" />
+            <span id="date-error" class="error"></span>
+        </p>
+
+        <p>
+            <label for="time">Pick-Up Time: </label>
+            <input type="time" name="time" id="time" />
+            <span id="time-error" class="error"></span>
+        </p>
+
+        <p>
+            <input type="button" value="Book Now" onclick="submitBooking()" />
+        </p>
+
+    </form>
+
+    <div id="reference"></div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
